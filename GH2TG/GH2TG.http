@@ -1,0 +1,27 @@
+@GH2TG_HostAddress = http://localhost:5244
+
+GET {{GH2TG_HostAddress}}/api/Webhook
+
+###
+POST {{GH2TG_HostAddress}}/api/Webhook
+Content-Type: application/json
+
+{
+   "action": "opened",
+   "issue": {
+     "url": "https://api.github.com/repos/octocat/Hello-World/issues/1347",
+     "number": 1347,
+   },
+   "repository" : {
+     "id": 1296269,
+     "full_name": "octocat/Hello-World",
+     "owner": {
+       "login": "octocat",
+       "id": 1,
+     },
+   },
+  "sender": {
+     "login": "octocat",
+     "id": 1,
+   }
+}
