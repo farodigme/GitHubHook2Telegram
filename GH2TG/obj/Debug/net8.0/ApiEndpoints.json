@@ -1,0 +1,39 @@
+[
+  {
+    "ContainingType": "GH2TG.Controllers.WebhookController",
+    "Method": "Get",
+    "RelativePath": "api/Webhook",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Webhook"
+  },
+  {
+    "ContainingType": "GH2TG.Controllers.WebhookController",
+    "Method": "ReceiveWebhook",
+    "RelativePath": "api/Webhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "GH2TG.Models.GitHubEvent",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
